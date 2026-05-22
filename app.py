@@ -292,7 +292,8 @@ def setup_agent(
     # ====================================================================
     # KNOWLEDGE BASE 1: CAMPAIGN DATABASE (JSON)
     # ====================================================================
-    
+    isExistCampaigns = os.path.exists("campaigns_db.json")
+    st.markdown(f"**isExistCampaigns:** `{isExistCampaigns}`")
     if os.path.exists("campaigns_db.json"):
         with open("campaigns_db.json", "r") as f:
             campaigns_db_docs = json.load(f)
