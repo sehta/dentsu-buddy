@@ -805,8 +805,10 @@ def render_chat_interface():
         with st.spinner("🔍 Searching knowledge bases and reasoning..."):
             try:
                 inputs = {"messages": [("user", user_input)]}
+                st.markdown(inputs)
+
                 result = st.session_state.graph.invoke(inputs)
-                
+                st.markdown(result)
                 # Extract answer
                 answer = result["messages"][-1].content if result["messages"] else "No response generated"
                 st.markdown("Answer:", answer)
