@@ -270,8 +270,6 @@ def setup_agent(
     tavily_key: str = None,
 ):
     """Initialize LLM, embeddings, vector stores, tools, and graph."""
-    st.markdown(f"**endpoint:** `{endpoint}`")
-    st.markdown(f"**tavily_key:** `{tavily_key}`")
     # Create LLM and embeddings clients
     llm = AzureChatOpenAI(
         azure_deployment=chat_model,
@@ -452,7 +450,7 @@ def setup_agent(
     st.markdown(f"**tavily_key Found:** `{tavily_key}`")
     if tavily_key:
         tavily_search = TavilySearchResults(
-            TAVILY_KEY= tavily_key,
+            tavily_api_key= tavily_key,
             max_results=5,
             search_depth="advanced",
             include_raw_content=True,
