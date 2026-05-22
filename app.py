@@ -449,8 +449,10 @@ def setup_agent(
     # ====================================================================
     
     search_web_tool = None
+    st.markdown(f"**tavily_key Found:** `{tavily_key}`")
     if tavily_key:
         tavily_search = TavilySearchResults(
+            TAVILY_KEY= tavily_key,
             max_results=5,
             search_depth="advanced",
             include_raw_content=True,
