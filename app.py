@@ -29,8 +29,7 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 
 # Document loading and processing
-from langchain_community.document_loaders import WebBaseLoader, PyMuPDFLoader
-from langchain_community.document_loaders.generic import UnstructuredFileLoader
+from langchain_community.document_loaders import UnstructuredFileLoader, WebBaseLoader, PyMuPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
 
