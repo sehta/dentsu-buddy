@@ -25,3 +25,4 @@ beautifulsoup4
 openpyxl
 matplotlib
 tabulate
+streamlit-option-menu==0.3.12
