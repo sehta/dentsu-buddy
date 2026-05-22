@@ -809,7 +809,7 @@ def render_chat_interface():
                 
                 # Extract answer
                 answer = result["messages"][-1].content if result["messages"] else "No response generated"
-                st.write("Answer:", answer)
+                st.markdown("Answer:", answer)
 
                 # Add assistant response to history
                 st.session_state.chat_history.append({
