@@ -1,37 +1,60 @@
-# Smart Dentsu Buddy - Requirements
-# Python 3.11.15
-# Fixed for all dependency conflicts
-
-# Core Framework
+# ============================================
+# STREAMLIT
+# ============================================
 streamlit==1.35.0
 streamlit-option-menu==0.3.12
 
-# LangChain Ecosystem (Compatible versions)
-langchain==1.2.17
-langchain-core==1.3.3
-langchain-community==0.4.1
-langchain-openai==1.1.10
-langchain-chroma==1.1.0
-langchain-text-splitters==1.1.2
+# ============================================
+# LANGCHAIN ECOSYSTEM
+# ============================================
+langchain==0.2.1
+langchain-core==0.2.3
+langchain-community==0.2.1
+langchain-openai==0.1.8
+langchain-text-splitters==0.2.0
 
-# LangGraph for Agentic Workflows
-langgraph==1.1.10
+# ============================================
+# LANGGRAPH
+# ============================================
+langgraph==0.0.55
 
-# Vector Databases & Embeddings (Fixed pydantic version)
-chromadb==0.5.0
-pydantic>=2.7.4,<3.0.0
+# ============================================
+# VECTOR STORE
+# ============================================
+faiss-cpu==1.8.0
 
-# Document Processing
-pymupdf==1.27.2.3
-python-docx==0.8.11
+# ============================================
+# OPENAI
+# ============================================
+openai==1.30.1
+tiktoken==0.7.0
 
-# Web Search & HTTP (Fixed requests version)
-tavily-python>=0.7.0
-requests>=2.32.5,<3.0.0
+# ============================================
+# DOCUMENT LOADERS
+# ============================================
+pymupdf==1.24.5
+pypdf==4.2.0
+python-docx==1.1.0
+docx2txt==0.8
 
-# Utilities
+# ============================================
+# EMBEDDINGS
+# ============================================
+sentence-transformers==2.7.0
+
+# ============================================
+# UTILITIES
+# ============================================
 python-dotenv==1.0.1
 aiohttp==3.9.3
+requests==2.31.0
 
-# Optional: For better Streamlit experience
+# ============================================
+# STREAMLIT SUPPORT
+# ============================================
 pillow==10.2.0
+
+# ============================================
+# PROTOBUF FIX
+# ============================================
+protobuf==3.20.3
