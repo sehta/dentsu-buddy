@@ -17,6 +17,7 @@ Last Updated: 2025-05-22
 """
 
 import os
+os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
 import json
 import time
 import warnings
