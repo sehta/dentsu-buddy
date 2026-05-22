@@ -270,7 +270,12 @@ def setup_agent(
     tavily_key: str = None,
 ):
     """Initialize LLM, embeddings, vector stores, tools, and graph."""
-    
+    print(endpoint);
+    print(tavily_key);
+    print(api_version);
+    print(embedding_model);
+    print(chat_model);
+    print(api_key);
     # Create LLM and embeddings clients
     llm = AzureChatOpenAI(
         azure_deployment=chat_model,
